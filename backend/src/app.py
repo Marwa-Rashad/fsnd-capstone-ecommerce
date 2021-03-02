@@ -1,17 +1,14 @@
 import os
 from flask import Flask, request, jsonify, abort, redirect, url_for, session, render_template
-
 from sqlalchemy import exc
 import json
 from flask_cors import CORS
-
 from database.models import setup_db, Product, Category, db
 from controllers.auth import AuthError, requires_auth
 import sys
 from functools import wraps
 import json
 from werkzeug.exceptions import HTTPException
-
 from dotenv import load_dotenv, find_dotenv
 
 from authlib.integrations.flask_client import OAuth
