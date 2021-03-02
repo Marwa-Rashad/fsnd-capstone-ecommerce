@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "02d545b8-7921-4bab-9024-6fa2c9c13cf1",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "Get categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{user}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/categories",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"description\": \"for admin\",\r\n\"type\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/categories",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch /categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"hdoom lel nonna\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/categories/6",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categories",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete /categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/categories/8",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categories",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/categories/8",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"categories",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "Get products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{usertoken}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"name\": \"lolo\",\r\n    \"description\": \" skirt\",\r\n    \"price\": 500,\r\n    \"category_id\": 5\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/products",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch /products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"name\": \"monna\",\r\n    \"description\": \"kiddo skirt\",\r\n    \"price\": 450,\r\n    \"category_id\": 4\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/products/22",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"products",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete /products/id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/products/2",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET product by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{user}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/products/13",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"products",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET product by catgeory ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admin}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "%7B%7Busertoken%7D%7D",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ecommerce-api-udacity.herokuapp.com/products/category/1",
+							"protocol": "https",
+							"host": [
+								"ecommerce-api-udacity",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"products",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
