@@ -6,9 +6,9 @@ from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 
-AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN', 'ecommerce1987.us.auth0.com')
-AUTH0_JWT_API_AUDIENCE = os.environ.get('AUTH0_JWT_API_AUDIENCE', 'http://localhost:5000')
-ALGORITHMS = os.environ.get('ALGORITHMS', ['RS256'])
+AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
+AUTH0_JWT_API_AUDIENCE = os.environ.get('AUTH0_JWT_API_AUDIENCE')
+ALGORITHMS = os.environ.get('ALGORITHMS')
 
 
 

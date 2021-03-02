@@ -1,6 +1,7 @@
 # Ecommere API
 
-This is an ecommerce API which lists products in an ecommerce website and their categories, where you can view, add, edit or delete any of them, based on your role. The roles using this API are the user and admin. The website has no front-end so far, but it will be implemented in the near future.
+## Motivation 
+This is an ecommerce API which lists products in an ecommerce website and their categories, where you can view, add, edit or delete any of them, based on your role. The roles using this API are the user and admin. The website has no front-end so far, but it will be implemented in the near future. It is done as a graduation project for the Udacity Full Stack Nanodegree.
 
 All code follows PEP8 style guide.
 
